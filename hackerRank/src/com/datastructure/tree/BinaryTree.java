@@ -131,12 +131,12 @@ public class BinaryTree {
 	 * @param node
 	 */
 	@SuppressWarnings("unused")
-	private void printTree(Node node) {
+	private void printInorder(Node node) {
 		if (node == null)
 			return;
-		printTree(node.left);
+		printInorder(node.left);
 		System.out.print(node.data + " ");
-		printTree(node.right);
+		printInorder(node.right);
 	}
 
 	/**
