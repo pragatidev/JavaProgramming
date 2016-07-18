@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.tree;
+package com.datastructure.tree;
 
 /**
  * @author pkunwer
