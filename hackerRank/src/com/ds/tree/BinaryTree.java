@@ -126,6 +126,18 @@ public class BinaryTree {
 	}
 
 	/**
+	 * MaxValue - Returns the maximum value in a non-empty binary search tree.
+	 * 
+	 */
+	@SuppressWarnings("unused")
+	private int maxValue(Node node) {
+		if (node.right == null)
+			return node.data;
+		else
+			return minValue(node.right);
+	}
+
+	/**
 	 * InOrder Tree traversal - Print data
 	 * 
 	 * @param node
@@ -168,6 +180,23 @@ public class BinaryTree {
 		System.out.print(node.data + " ");
 		printPreorder(node.left);
 		printPreorder(node.right);
+	}
+
+	/**
+	 * Tests if a tree meets the conditions to be a binary search tree (BST)
+	 */
+	public boolean isBST1() {
+		return isBST(root);
+	}
+
+	private boolean isBST(Node node) {
+		if (node == null)
+			return true;
+		if (node.left != null && maxValue(node.left) > node.data)
+			return false;
+		if (node.right != null && minValue(node.right) <= node.data)
+			return false;
+		return isBST(node.left) && isBST(node.right);
 	}
 
 	/**
