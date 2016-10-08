@@ -17,7 +17,13 @@ public class InsertionSort {
 				arr[j] = arr[j - 1];
 				j--;
 			}
-
+			arr[j] = index;
+		}
+	}
+	
+	void printArray(int[] arr){
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
 		}
 	}
 
@@ -25,7 +31,11 @@ public class InsertionSort {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int arr[] = {23,45,8,91,63,20};
+		InsertionSort is = new InsertionSort();
+		is.insertionSot(arr);
+		System.out.println("Sorted Array is: ");
+		is.printArray(arr);
 
 	}
 
