@@ -5,6 +5,9 @@ package com.ds.sorting;
 
 /**
  * @author pragati
+ * 
+ * Advantage of InsertionSort over Selection sort and Bubble sort is that it gives near linear time 
+ * performance when list is sorted to an extent
  *
  */
 public class InsertionSort {
