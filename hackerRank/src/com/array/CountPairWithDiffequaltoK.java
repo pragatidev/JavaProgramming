@@ -28,7 +28,7 @@ public class CountPairWithDiffequaltoK {
 				pairs++;
 				i++;
 				k++;
-			} else if (arr[k] - arr[i] > 0)
+			} else if (arr[k] - arr[i] > diff)
 				i++;
 			else
 				k++;
