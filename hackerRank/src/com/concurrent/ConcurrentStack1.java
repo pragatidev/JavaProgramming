@@ -2,7 +2,7 @@ package com.concurrent;
 
 public class ConcurrentStack1 {
 	
-	 public ConcurrentStackL()
+	 public ConcurrentStack1()
      {
          _head = new Node(default(T), _head);
          _objLock = new object();

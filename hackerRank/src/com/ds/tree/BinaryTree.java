@@ -134,7 +134,7 @@ public class BinaryTree {
 		if (node.right == null)
 			return node.data;
 		else
-			return minValue(node.right);
+			return maxValue(node.right);
 	}
 
 	/**
