@@ -6,7 +6,8 @@ package com.leetcode;
 import java.util.Stack;
 
 /**
- * @author pkunwer Evaluate the value of an arithmetic expression in Reverse
+ * @author pkunwer 
+ * Evaluate the value of an arithmetic expression in Reverse
  *         Polish Notation. Valid operators are +, -, *, /. Each operand
  *
  *         Problem will be solve using stack

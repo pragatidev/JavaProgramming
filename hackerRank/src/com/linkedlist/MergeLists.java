@@ -17,7 +17,7 @@ public class MergeLists {
 
 	}
 
-	Node MergeLists(Node headA, Node headB) {
+	Node MergeList(Node headA, Node headB) {
 	     // This is a "method-only" submission. 
 	     // You only need to complete this method 
 		Node node1 = headA;
@@ -29,6 +29,8 @@ public class MergeLists {
 				node1 = node1.next;
 			} 
 		}
+		
+		return head;
 
 	}
 }
