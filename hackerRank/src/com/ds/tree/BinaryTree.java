@@ -200,6 +200,23 @@ public class BinaryTree {
 	}
 
 	/**
+	 * Changes the tree into its mirror image
+	 * 
+	 * @param node
+	 */
+	public void mirror(Node node) {
+		if (node != null) {
+			mirror(node.left);
+			mirror(node.right);
+
+			Node temp = node.left;
+			node.left = node.right;
+			node.right = temp;
+		}
+
+	}
+
+	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {

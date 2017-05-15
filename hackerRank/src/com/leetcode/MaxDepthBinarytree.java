@@ -39,6 +39,8 @@ public class MaxDepthBinarytree {
 			return lDepth;
 		} else
 			return rDepth;
+		
+		//return 1+ Math.max(root.left, root.right);
 
 	}
 
